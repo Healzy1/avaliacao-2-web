@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulário</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="/" class="logo">Healzy Reviews</a>
+        <nav class="nav">
+             <input type="checkbox" id="checkbox" class="checkbox">
+             <label for="checkbox" class="label-menu">Menu<span class="hamburguer"></span></label>
+             <ul class="menu">
+                 <li><a href="index.html">Página Inicial</a></li>
+                 <li><a href="MelhoresAnimes_Arcos.html">Melhores Animes e seus Arcos</a></li>
+                 <li><a href="info_animes.html">Informações dos Animes</a></li>
+                 <li><a href="forms.html">Formulário sobre Gostos</a></li>
+                 <li><a href="cenas_iconicas.html">Cenas Icônicas</a></li>
+             </ul>
+        </nav>
+     </header>
+
+    <section class="bem-vindo">
+        <h1 class="titulo-principal" >Formulário Sobre seus Gostos!</h1>
+        <p class="intro">Este formulário será utilizado futuramente para que possamos recomendar melhores conteúdos focados em suas escolhas.</p>
+    </section>
+
+    <br>
+    <fieldset>
+    <form action="servidor_do_professor.php" method="post">
+
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="nome" placeholder="Digite seu nome"> 
+    <br>
+    <p>Insira seus animes favoritos:</p>
+    <label for="favoritos"></label>
+    <textarea id="favoritos" name="favoritos" rows="4" cols="50"></textarea>
+    <br>
+    <p>Genêros Favoritos:</p>
+    <label for="generos"></label>
+    <input type="checkbox" id="generos1" name="generos1" value="acao"> Ação
+    <label for="generos"></label>
+    <input type="checkbox" id="generos2" name="generos2" value="drama"> Drama
+    <label for="generos"></label>
+    <input type="checkbox" id="generos3" name="generos3" value="comedia"> Comédia
+    <label for="generos"></label>
+    <input type="checkbox" id="generos4" name="generos4" value="romance"> Romance
+    <label for="generos"></label>
+    <input type="checkbox" id="generos5" name="generos5" value="misterio"> Mistério
+    <label for="generos"></label>
+    <input type="checkbox" id="generos6" name="generos6" value="aventura"> Aventura
+    <label for="generos"></label>
+    <input type="checkbox" id="generos7" name="generos7" value="terror"> Terror
+
+    <p>Qual Método você utiliza com maior frequência para ver anime?</p>
+    <label for="mobile"></label>
+    <input type="radio" id="mobile" name="opcoes">Mobile
+
+    <label for="desktop"></label>
+    <input type="radio" id="desktop" name="opcoes">Desktop
+
+    <label for="TV"></label>
+    <input type="radio" id="tv" name="opcoes">TV
+    <br>
+    <label for="arquivo">Envie o papel de parede do seu personagem favorito:</label>
+    <input type="file" id="arquivo" name="arquivo">
+    <br>
+    <label for="enviar_forms"></label>
+    <input class="botao-enviar" type="submit" name="enviar_forms" value="Enviar">
+    </form>
+
+    </fieldset>
+
+    
+    
+    <footer>
+        <div class="propaganda">
+            <section>
+                <h2>Propaganda</h2>
+                <p>Espaço reservado para propagandas.</p>
+            </section>
+        </div>
+        <div class="redes-sociais">
+            <p>Redes Sociais:</p>
+            <a href="https://www.instagram.com/icaro_https/">
+                <img src="images/instagram icon.svg" alt="instagram">
+            </a>
+            <a href="https://github.com/Healzy1">
+                <img src="images/github icon.svg" alt="instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
